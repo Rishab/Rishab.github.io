@@ -15,7 +15,7 @@
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top" id="topNav">
-      <div class="container">
+      <div class="container-fluid">
         <a href="#" class="navbar-brand">Rishab Chawla</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -52,42 +52,42 @@
 
     <!-- Landing Header Section for Desktop -->
     <header>
-      <div id="desktop">
+      <div class="container-fluid" id="desktop">
         <div class="row">
-          <div class="col-lg-6" id="content">
-            <img src="images/Landing Bitmoji.png">
+          <div class="col-lg-6">
+            <img id="landing-bitmoji" src="images/Landing Bitmoji.png">
           </div>
 
-          <div class="col-lg-6 container">
-            <h1>Hello There! I'm Rishab.</h1>
-            <h2>I'm a student, leader, eager learner, and aspiring software engineer.</h2>
+          <div class="col-lg-6 container-fluid">
+            <h1>Hello there! I'm Rishab.</h1>
+            <h2>I'm a student leader, eager learner, and aspiring software engineer.</h2>
 
             <ul class="list-inline">
 
               <!-- Email -->
               <li class="list-inline-item">
-                <a class="btn btn-lg btn-outline-light text-center rounded-circle" href="#">
+                <a class="btn btn-lg btn-outline-light text-center rounded-circle" href="mailto:rishab.chawla@rutgers.edu">
                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 </a>
               </li>
 
               <!-- Linkedin -->
               <li class="list-inline-item">
-                <a class="btn btn-lg btn-outline-light text-center rounded-circle" href="#">
+                <a class="btn btn-lg btn-outline-light text-center rounded-circle" href="https://www.linkedin.com/in/rishab-chawla/">
                   <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
               </li>
 
                <!-- Github -->
               <li class="list-inline-item">
-                <a class="btn btn-lg btn-outline-light text-center rounded-circle" href="#">
+                <a class="btn btn-lg btn-outline-light text-center rounded-circle" href="https://github.com/Rishab">
                   <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
               </li>
 
               <!-- Medium -->
               <li class="list-inline-item">
-                <a class="btn btn-lg btn-outline-light text-center rounded-circle" href="#">
+                <a class="btn btn-lg btn-outline-light text-center rounded-circle" href="https://medium.com/@rishychawla">
                   <i class="fa fa-medium" aria-hidden="true"></i>
                 </a>
               </li>
@@ -108,12 +108,12 @@
 
     <!-- Landing Header Section for Mobile -->
     <header>
-      <div id="mobile">
+      <div class="container-fluid" id="mobile">
         <div class="row">
 
-          <div class="col-lg-6 container">
-            <h1>Hello There! I'm Rishab.</h1>
-            <h2>I'm a student, leader, eager learner, and aspiring software engineer.</h2>
+          <div class="col-lg-6">
+            <h1>Hello there! I'm Rishab.</h1>
+            <h2>I'm a student leader, eager learner, and aspiring software engineer.</h2>
 
             <ul class="list-inline">
 
@@ -153,16 +153,64 @@
               </li>
 
             </ul>
-            
+
           </div>
 
-          <div class="col-lg-6" id="content">
-            <img src="images/Landing Bitmoji.png">
+          <div class="col-lg-6">
+            <img id="landing-bitmoji" src="images/Landing Bitmoji.png">
           </div>
 
         </div>
       </div>
     </header>
+
+    <!-- About Me -->
+    <section class="text-black" id="about">
+      <div class="container-fluid">
+        <h2>About Me</h2>
+        <hr></hr>
+        <div class="row" id="">
+          <div class="col-lg-8 mr-auto d-block">
+            <p class="about-text">I am second year student at Rutgers Univerity-New Brunswick
+            studying Computer Science and Economics. I am experienced with
+            developing algorithms, creating interesting projects, and applying
+            machine learning methods. Currently, I am exploring the power of web
+            development by learning HTML, CSS, and Javascript and popular frameworks
+            such as Bootstrap.</p>
+
+            <p class="about-text">My love for learning drives me to learn new technical and soft skills
+              by interacting with people on a daily basis. I aspire to use my skill set
+              to work as a Software Engineer, focusing on building front-end experiences
+              for users that are organized, elegant, and practical. Ultimately, I hope
+              that these front-end applications provide the optimal user experience.</p>
+          </div>
+          <div class="col-lg-4">
+            <img class="d-block rounded-circle" id="headshot" src="images/Headshot.jpg">
+          </div>
+        </div>
+        <h2>Hobbies</h2>
+        <hr></hr>
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <img class="d-block hobbies-images" src="images/Exercise Bitmoji.png">
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <img class="d-block hobbies-images" src="images/Reading Bitmoji.png">
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <img class="d-block hobbies-images" src="images/Guitar Bitmoji.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <div class="container-fluid">
+        <h2>Skills</h2>
+        <hr></hr>
+      </div>
+    </section>
 
   </body>
 </html>

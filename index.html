@@ -52,13 +52,13 @@
 
     <!-- Landing Header Section for Desktop -->
     <header>
-      <div class="container-fluid" id="desktop">
+      <div class="container-fluid desktop">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6" style="padding-left: 0; margin-left:0;">
             <img id="landing-bitmoji" src="images/Landing Bitmoji.png">
           </div>
 
-          <div class="col-lg-6 container-fluid">
+          <div class="col-lg-6">
             <h1>Hello there! I'm Rishab.</h1>
             <h2>I'm a student leader, eager learner, and aspiring software engineer.</h2>
 
@@ -108,7 +108,7 @@
 
     <!-- Landing Header Section for Mobile -->
     <header>
-      <div class="container-fluid" id="mobile">
+      <div class="container-fluid mobile">
         <div class="row">
 
           <div class="col-lg-6">
@@ -156,7 +156,7 @@
 
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" style="padding-left: 0; margin-left:0;">
             <img id="landing-bitmoji" src="images/Landing Bitmoji.png">
           </div>
 
@@ -164,10 +164,10 @@
       </div>
     </header>
 
-    <!-- About Me -->
-    <section class="text-black" id="about">
+    <!-- About Me Desktop -->
+    <section class="text-black desktop" id="about">
       <div class="container-fluid">
-        <h2>About Me</h2>
+        <h2> A little bit about me</h2>
         <hr></hr>
         <div class="row" id="">
           <div class="col-lg-8 mr-auto d-block">
@@ -188,17 +188,48 @@
             <img class="d-block rounded-circle" id="headshot" src="images/Headshot.jpg">
           </div>
         </div>
-        <h2>Hobbies</h2>
-        <hr></hr>
+      </section>
+
+        <section class="text-black mobile" id="about">
+          <div class="container-fluid">
+            <div class="col-lg-4">
+              <img class="d-block rounded-circle" id="headshot" src="images/Headshot.jpg">
+            </div>
+
+            <h2> A little bit about me</h2>
+            <hr></hr>
+            <div class="row" id="">
+              <div class="col-lg-8 mr-auto d-block">
+                <p class="about-text">I am second year student at Rutgers Univerity-New Brunswick
+                studying Computer Science and Economics. I am experienced with
+                developing algorithms, creating interesting projects, and applying
+                machine learning methods. Currently, I am exploring the power of web
+                development by learning HTML, CSS, and Javascript and popular frameworks
+                such as Bootstrap.</p>
+
+                <p class="about-text">My love for learning drives me to learn new technical and soft skills
+                  by interacting with people on a daily basis. I aspire to use my skill set
+                  to work as a Software Engineer, focusing on building front-end experiences
+                  for users that are organized, elegant, and practical. Ultimately, I hope
+                  that these front-end applications provide the optimal user experience.</p>
+              </div>
+            </div>
+          </section>
+
+        <!-- Hobbies -->
+        <h2>When I'm not coding, I am ...</h2>
         <div class="row">
           <div class="col-lg-4 col-md-12">
             <img class="d-block hobbies-images" src="images/Exercise Bitmoji.png">
+            <h4 class="hobbies-text">Exercising to boost productivity</h4>
           </div>
-          <div class="col-lg-4 col-md-12">
+          <div id="center-hobby" class="col-lg-4 col-md-12">
             <img class="d-block hobbies-images" src="images/Reading Bitmoji.png">
+            <h4 class="hobbies-text">Reading to learn something new</h4>
           </div>
           <div class="col-lg-4 col-md-12">
             <img class="d-block hobbies-images" src="images/Guitar Bitmoji.png">
+            <h4 class="hobbies-text">Learning to play a new song on guitar</h4>
           </div>
         </div>
       </div>
@@ -207,7 +238,31 @@
     <!-- Skills -->
     <section>
       <div class="container-fluid">
-        <h2>Skills</h2>
+        <h2>My development skills</h2>
+        <hr></hr>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <div class="container-fluid">
+        <h2>Work experiences</h2>
+        <hr></hr>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <div class="container-fluid">
+        <h2>A look at my favorite projects</h2>
+        <hr></hr>
+      </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section>
+      <div class="container-fluid">
+        <h2>Stay in touch</h2>
         <hr></hr>
       </div>
     </section>

@@ -1,7 +1,8 @@
 body {
+  width: 100%
   margin: 0;
   background-color: #171c28;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .hero {
@@ -10,7 +11,6 @@ body {
   width: 100vw;
   height: 100vh;
   color: white;
-
   /* Flexbox centering */
   display: flex;
   justify-content: center;
@@ -35,22 +35,50 @@ body {
   opacity: 0.2;
 }
 
-.hero h1 {
-  font-size: 3em;
-  position: relative;
-}
-
 .hero .name-text {
   font-size: 5em;
-  margin-top: 70%;
+  margin-top: 40%;
   margin-bottom: 5%;
-  font-family: 'Dancing Script', serif;
+  animation: slideUp ease 1.5s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
 }
 
+.hero .swe-text {
+  font-size: 3em;
+  animation: slideDown ease 1.5s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+
+.navbar-nav {
+  animation: fadeIn 2s normal forwards;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
 .navbar-light .navbar-brand {
+  animation: fadeIn 2s normal forwards;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
   color: white;
 }
+.navbar-light .navbar-toggler {
+  animation-iteration-count: 1;
+  animation: fadeIn 2s normal forwards;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  border: none;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+}
+
 .navbar-light .navbar-nav .nav-link {
+  animation-iteration-count: 1;
   color: white;
 }
 
@@ -60,6 +88,9 @@ body {
 }
 
 li a i  {
+  animation: fadeIn ease 2s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
   color: white;
   margin: 0 0;
   padding: 0 0;
@@ -67,6 +98,12 @@ li a i  {
   position:relative;
   padding-top: 50%;
 }
+hr {
+  border: 2px solid white;
+  border-radius: 5px;
+  width:0%;
+}
+
 .fab:hover  {
   color: black;
 }
@@ -76,16 +113,65 @@ li a i  {
   color: white;
   border-color: white;
 }
-.custom-toggler.navbar-toggler {
-  border-color: white;
-} 
+/* .custom-toggler.navbar-toggler {
+  border-color: none;
+}  */
+
+.slide-up {
+  position: relative;
+  animation: slideUp ease 3s;
+  animation-delay: 2s;
+}
+
+@keyframes slideUp {
+  from {
+    top: 50px;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.slide-down {
+  position: relative;
+  animation: slideDown ease 3s;
+  animation-delay: 2s;
+}
+
+@keyframes slideDown {
+  from {
+    top: -50px;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.zoom-in {
+  /* position: relative; */
+  animation: zoomIn 0.75s linear forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    width:0%;
+  }
+  to {
+    width:90%;
+  }
+}
 
 .fade-in {
-  animation: fadeIn ease 2s;
-  -webkit-animation: fadeIn ease 2s;
-  -moz-animation: fadeIn ease 2s;
-  -o-animation: fadeIn ease 2s;
-  -ms-animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn 2s normal forwards;
+  -moz-animation: fadeIn 2s normal forwards;
+  -o-animation: fadeIn 2s normal forwards;
+  -ms-animation: fadeIn 2s normal forwards;
 }
 
 @keyframes fadeIn {

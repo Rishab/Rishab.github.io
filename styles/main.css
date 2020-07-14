@@ -32,7 +32,6 @@ body {
   position: absolute;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -93,7 +92,6 @@ body {
   } */
 
 .navbar-light .navbar-nav .nav-link {
-  animation-iteration-count: 1;
   color: white;
 }
 
@@ -188,7 +186,7 @@ hr {
 }
 
 .list-col ul li {
-  list-style-type: ">   ";
+  list-style-type: gurmukhi;
   font-weight: 300;
 }
 

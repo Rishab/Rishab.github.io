@@ -1,7 +1,12 @@
 body {
   margin: 0;
   background-color: #171c28;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
+  overscroll-behavior-y: none;
+}
+
+.fa-bars {
+  color: white;
 }
 
 .hero {
@@ -15,14 +20,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   /* Text Styles */
   text-align: center;
 }
 
 .hero::before {
   content: "";
-  background-image: url("Landing Image.JPG");
+  background-image: url("../images/landing_portrait.JPG");
   background-size: cover;
   position: absolute;
   background-position: center center;
@@ -87,34 +92,33 @@ body {
       display:block;
   } */
 
-
 .navbar-light .navbar-nav .nav-link {
   animation-iteration-count: 1;
   color: white;
 }
 
-.navbar-nav > li{
-  padding-left:12px;
-  padding-right:12px;
+.navbar-nav > li {
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 /* Social media icons */
-li a i  {
+li a i {
   color: white;
   margin: 0 0;
   padding: 0 0;
   z-index: 0;
-  position:relative;
+  position: relative;
   padding-top: 50%;
 }
 
 hr {
   border: 2px solid white;
   border-radius: 5px;
-  width:0%;
+  width: 0%;
 }
 
-.fab:hover  {
+.fab:hover {
   color: black;
 }
 
@@ -148,7 +152,7 @@ hr {
 }
 
 .about-me-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .skills {
@@ -170,7 +174,7 @@ hr {
 .list-col {
   text-align: center;
   padding-bottom: 2em;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .list-col h3 {
@@ -184,7 +188,7 @@ hr {
 }
 
 .list-col ul li {
-  list-style-type: '>   ';
+  list-style-type: ">   ";
   font-weight: 300;
 }
 
@@ -197,8 +201,9 @@ hr {
   position: relative;
   padding: var(--space-md) 0;
 
-  &::before { // this is the timeline vertical line
-    content: '';
+  &::before {
+    // this is the timeline vertical line
+    content: "";
     position: absolute;
     top: 0;
     left: 18px;
@@ -225,21 +230,23 @@ hr {
   flex-shrink: 0;
 
   @include breakpoint(md) {
-      order: 1; // flex order -> place the image after cd-timeline__content
-   }
+    order: 1; // flex order -> place the image after cd-timeline__content
+  }
 }
 
 .cd-timeline__content {
-   flex-grow: 1; // expand element so that it takes up all the available space inside its parent
+  flex-grow: 1; // expand element so that it takes up all the available space inside its parent
 
-   @include breakpoint(md) {
-      width: 45%;
-      flex-grow: 0; // prevent element from growing inside its parent
-   }
+  @include breakpoint(md) {
+    width: 45%;
+    flex-grow: 0; // prevent element from growing inside its parent
+  }
 }
 
-@include breakpoint(md) { // animations
-  .cd-timeline__img--hidden, .cd-timeline__content--hidden {
+@include breakpoint(md) {
+  // animations
+  .cd-timeline__img--hidden,
+  .cd-timeline__content--hidden {
     visibility: hidden;
   }
 
@@ -258,7 +265,7 @@ hr {
     transform: scale(1.2);
   }
   100% {
-    transform: scale(1);    
+    transform: scale(1);
   }
 }
 
@@ -275,10 +282,10 @@ hr {
 
 @keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
@@ -326,29 +333,45 @@ hr {
 
 @keyframes zoomIn {
   from {
-    width:0%;
+    width: 0%;
   }
   to {
-    width:90%;
+    width: 90%;
   }
 }
 
 /* Waving hand emoji. Source: https://jarv.is/notes/css-waving-hand-emoji/ */
 .wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }

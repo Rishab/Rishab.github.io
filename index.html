@@ -35,7 +35,13 @@
       src="https://kit.fontawesome.com/09e5d19d1f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/main.js"></script>
     <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-device-width: 768px)"
+      href="styles/mobile.css"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
@@ -56,28 +62,50 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+          <li
+            class="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li
+            class="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li
+            class="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li
+            class="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li
+            class="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a class="nav-link" href="#hobbies">Hobbies</a>
+          </li>
+          <li
+            class="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Hobbies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a
-              href="https://docs.google.com/document/d/1YXOXawt8yNBN1qfvLdXrNEMdgetNeOOreQg4FZYu2Y8/edit#"
-            >
+            <a href="resources/resume.pdf">
               <button type="button" class="btn btn-outline-light resume-btn">
                 Résumé
               </button>
@@ -123,13 +151,13 @@
       </div>
     </div>
     <div class="container">
-      <div class="about-me">
+      <div id="about" class="about-me">
         <h1 class="section-title">
           My Elevator Pitch
         </h1>
         <div class="row">
           <div class="col-lg about-me-img">
-            <img src="images/profile_portrait.jpeg" />
+            <img src="resources/images/profile_portrait.jpeg" />
           </div>
           <div class="col-lg about-me-text">
             <h3>Hello! <span class="wave">👋🏽</span></h3>
@@ -154,7 +182,7 @@
           </div>
         </div>
       </div>
-      <div class="skills">
+      <div id="skills" class="skills">
         <h1 class="section-title">
           What I'm good at
         </h1>
@@ -211,5 +239,202 @@
         </div>
       </div>
     </div>
+
+    <div id="experience" class="experience">
+      <div class="container">
+        <h1 class="section-title">
+          <span>Experiences</span>
+        </h1>
+        <div class="row">
+          <div class="col-lg">
+            <div class="timeline">
+              <!-- Capital One TDP -->
+              <div class="timeline-box">
+                <div class="timeline-box-left">
+                  <h5>August 2020 - Present</h5>
+                  <h6>Capital One</h6>
+                </div>
+                <div class="timeline-icon"></div>
+                <div class="timeline-box-right">
+                  <div class="timeline-content">
+                    <h5 class="timeline-title">Software Engineer</h5>
+                    <p class="description">
+                      More information coming soon!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Computer Science Degree -->
+              <div class="timeline-box">
+                <div class="timeline-box-left">
+                  <h5>September 2016 - May 2020</h5>
+                  <h6>Rutgers University School of Arts and Sciences</h6>
+                </div>
+                <div class="timeline-icon"></div>
+                <div class="timeline-box-right">
+                  <div class="timeline-content">
+                    <h5 class="timeline-title">
+                      Bachelors of Science, Computer Science, minor in Economics
+                    </h5>
+                    <p class="description">
+                      Earned a degree in Computer Science for completing 4 years
+                      of relevant coursework in algorithm design, computer
+                      architecture, systems programming, operating and
+                      distributed systems, database management systems, and
+                      object oriented programming.
+                    </p>
+                    <p>
+                      Awarded Dean's List every semester for maintaining a GPA
+                      above 3.5
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Part Time Lecturer -->
+              <div class="timeline-box">
+                <div class="timeline-box-left">
+                  <h5>September 2019 - May 2020</h5>
+                  <h6>Rutgers University Computer Science</h6>
+                </div>
+                <div class="timeline-icon"></div>
+                <div class="timeline-box-right">
+                  <div class="timeline-content">
+                    <h5 class="timeline-title">Part Time Lecturer</h5>
+                    <p class="description">
+                      Facilitated weekly recitations of 30+ students in a
+                      collaborative learning environment to solve and explain
+                      challenging data structures problems and concepts.
+                      Conducted weekly office hours with 15+ students to answer
+                      questions regarding coursework and material. Organized
+                      optional review sessions of 200+ students to reinforce
+                      course material in preparation for exams.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Learning Assistant -->
+              <div class="timeline-box">
+                <div class="timeline-box-left">
+                  <h5>January 2018 - May 2020</h5>
+                  <h6>Rutgers University Learning Centers</h6>
+                </div>
+                <div class="timeline-icon"></div>
+                <div class="timeline-box-right">
+                  <div class="timeline-content">
+                    <h5 class="timeline-title">Learning Assistant</h5>
+                    <p class="description">
+                      Conducted study groups to facilitate small group
+                      discussions, encourage collaborative learning, and
+                      challenge students to discover new problem-solving
+                      techniques for complex computer science and physics
+                      concepts. Applied pedagogical learning techniques
+                      including learning theories and strategies, mental models,
+                      discursive teaching methods, and leadership.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Capital One TIP -->
+              <div class="timeline-box">
+                <div class="timeline-box-left">
+                  <h5>June 2019 - August 2020</h5>
+                  <h6>Capital One</h6>
+                </div>
+                <div class="timeline-icon"></div>
+                <div class="timeline-box-right">
+                  <div class="timeline-content">
+                    <h5 class="timeline-title">Software Engineering Intern</h5>
+                    <p class="description">
+                      Designed and developed a 10000+ node relational graph of
+                      AWS IAM that describes trusted principals and permissions
+                      granted to 250+ AWS engineer accounts. Queried data from a
+                      PostgreSQL database to develop a command line interface
+                      tool in Python to answer questions regarding Capital One's
+                      cloud footprint and IAM entities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- FIGS Peer Instructor -->
+              <div class="timeline-box">
+                <div class="timeline-box-left">
+                  <h5>April 2018 - December 2018</h5>
+                  <h6>Rutgers University Career Services</h6>
+                </div>
+                <div class="timeline-icon"></div>
+                <div class="timeline-box-right">
+                  <div class="timeline-content">
+                    <h5 class="timeline-title">FIGS Peer Instructor</h5>
+                    <p class="description">
+                      Prepared a ten-week lesson plan on topics related to
+                      economics such as capitalism, game theory,
+                      cryptocurrencies, and financial crises to introduce
+                      students to topics studied in economics. Mentored 25
+                      students in their transition as a first-year student at
+                      Rutgers University by presenting them with on-campus
+                      resources.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Data Science Research Assistant -->
+              <div class="timeline-box">
+                <div class="timeline-box-left">
+                  <h5>May 2018 - September 2018</h5>
+                  <h6>
+                    Rutgers University School of Communication and Information
+                  </h6>
+                </div>
+                <div class="timeline-icon"></div>
+                <div class="timeline-box-right">
+                  <div class="timeline-content">
+                    <h5 class="timeline-title">
+                      Data Science Research Assistant
+                    </h5>
+                    <p class="description">
+                      Collected and organized data labels on 2000+ Instagram
+                      posts using the Google Forms platform. Analyzed the data
+                      using Python's Pandas and Scikit-learn libraries.
+                      Presented the results using visualizations made through
+                      Matplotlib and Seaborn to aid in automatic cyberbullying
+                      classification.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Orientation Leader -->
+              <div class="timeline-box">
+                <div class="timeline-box-left">
+                  <h5>March 2017 - September 2017</h5>
+                  <h6>
+                    Rutgers University Student Affairs
+                  </h6>
+                </div>
+                <div class="timeline-icon"></div>
+                <div class="timeline-box-right">
+                  <div class="timeline-content">
+                    <h5 class="timeline-title">
+                      Orientation Leader
+                    </h5>
+                    <p class="description">
+                      Welcomed, prepared, and engaged 6000 first-year students,
+                      transfer students, and their families to aid in their
+                      transition to Rutgers University. Interacted with small
+                      groups of up to 15 students during 22 orientation sessions
+                      and facilitated thought-provoking discussions about sexual
+                      assault, microaggressions, diversity, and resources on
+                      campus. Coordinated logistics with a special operations
+                      team to ensure utmost efficiency during each session.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="projects"></div>
   </body>
 </html>

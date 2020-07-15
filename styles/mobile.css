@@ -1,6 +1,61 @@
-.hero .name-text {
+.hero::before {
+  background-attachment: initial;
+}
+
+.navbar {
+  padding: 0 0;
+}
+.navbar .bg {
+  background-color: #171c28;
+}
+.navbar-brand {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-toggler {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-collapse ul {
+  background: #171c28;
+  opacity: 0.95;
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  /* padding-left: 0px; */
+}
+
+.navbar-collapse ul li {
+  padding: 0.75em 0;
+}
+
+.navbar-nav {
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-device-width: 625px) {
+  .hero .name-text {
+    font-size: 4em;
+  }
+  .hero .swe-text {
     font-size: 3em;
+  }
+}
+@media screen and (max-device-width: 499px) {
+  .hero .name-text {
+    font-size: 3em;
+  }
+  .hero .swe-text {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-device-width: 374px) {
+  .hero .name-text {
+    font-size: 2em;
   }
   .hero .swe-text {
     font-size: 1.5em;
   }
+}

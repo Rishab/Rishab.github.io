@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 150px;
+        font-family: Roboto;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path id="Polygon_3" data-name="Polygon 3" class="cls-1" d="M198.452,485.926q-59.595-33.568-120.376-65.149T18.038,323.21q0.743-65.985-.913-131.956T75.809,92.866q60.338-32.418,119.464-66.807t118.721-.821Q373.589,58.807,434.37,90.387t60.038,97.567q-0.743,65.986.912,131.956T436.637,418.3Q376.3,450.716,317.173,485.105T198.452,485.926Z"/>
+  <text id="DEMO" class="cls-2" x="45.715" y="309.504">DEMO</text>
+</svg>

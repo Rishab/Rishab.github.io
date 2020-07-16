@@ -102,7 +102,7 @@ body {
 }
 
 /* Social media icons */
-li a i {
+.landing-list-icon {
   color: white;
   margin: 0 0;
   padding: 0 0;
@@ -298,21 +298,6 @@ hr {
   background: rgba(0, 0, 0, 0.8);
 }
 
-
-/* .timeline .timeline-box:after {
-  background-color: white;
-  height: 35px;
-  width: 35px;
-  border: none;
-  border-radius: 0;
-  transform: translateX(0) translateY(-50%) rotate(45deg);
-  left: 40.5%;
-} */
-
-/* .timeline .timeline-content:hover {
-  /* background-color: rgb(139, 126, 126); */
-} */
-
 /* Styles for company name */
 .timeline .timeline-title {
   letter-spacing: 1px;
@@ -323,6 +308,117 @@ hr {
 
 .timeline .description {
   /* padding: 10px 10px 10px 10px; */
+}
+
+.demo-icon {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
+    brightness(118%) contrast(119%);
+}
+
+.projects {
+  padding: 2em 2em;
+  background-color: #eeeeee;
+}
+
+.project-card {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  font-family: "Roboto", "sans-serif";
+  margin: 2em auto;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.project-card .project-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+.project-card .project-title {
+  padding-top: 0.5em;
+  text-align: center;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+}
+
+.project-card .project-description {
+  padding: 0.25em 1em 0em 1em;
+}
+.project-card .btn-learn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0em;
+}
+
+.project-card .btn-learn-wrapper .btn-learn {
+  width: 90%;
+  color: #060d29;
+  border-color: #060d29;
+}
+
+.btn-learn:hover {
+  color: white !important;
+  background-color: #131c42;
+}
+
+.project-list-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0em 2em;
+  width: 100%;
+}
+
+.project-list-wrapper i {
+  padding: 0 0.75em;
+}
+
+.project-list-wrapper i:hover {
+  color: #4759ab !important;
+}
+
+.project-tags-wrapper li {
+  padding: 5px 0px;
+}
+
+.lang-tag {
+  background-color: #eeeeee;
+  border-radius: 5px;
+  color: #131c42;
+  font-weight: 300;
+  padding: 3px 4px;
+}
+
+.contact-description {
+  color: white;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 300;
+  font-size: large;
+  text-align: center;
+  padding: 1em 0em;
+}
+
+.email-btn {
+  font-family: "Roboto", "sans-serif";
+  color: white;
+  border-color: white;
+}
+.email-btn {
+  font-family: "Roboto", "sans-serif";
+  color: white;
+  border-color: white;
+  text-align: center;
+  margin: auto;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.email-btn:hover {
+  background-color: rgb(232, 232, 232);
+  border-color: rgb(232, 232, 232);
+  color: #131c42;
 }
 
 /* Animations */

@@ -2,6 +2,10 @@
   background-attachment: initial;
 }
 
+.experience::before {
+  background-attachment: initial;
+}
+
 .navbar {
   padding: 0 0;
 }

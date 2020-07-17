@@ -56,9 +56,15 @@ body {
   animation-delay: 1s;
 }
 
-.navbar-nav {
-  /* animation: fadeIn 2s normal forwards;
-  animation-delay: 2s; */
+nav {
+  position: fixed;
+  /* top: 0; */
+  transition: 0.4s;
+}
+
+.nav-bg {
+  background-color: #060d29;
+  box-shadow: 0px 1px 15px black;
 }
 .navbar-light .navbar-brand {
   /* animation: fadeIn 2s normal forwards;
@@ -74,23 +80,6 @@ body {
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.navbar-toggler {
-}
-
-/* .navbar-collapse, 
-  .navbar-collapse.collapse,
-  .navbar-collapse.in, 
-  .navbar-collapse.collapsing{
-      max-height: 100vh;  
-      background-color: pink;
-  }
-  .navbar-collapse.in{
-      height: 100vh;
-  }   
-
-  .navbar-expander{
-      display:block;
-  } */
 
 .navbar-light .navbar-nav .nav-link {
   color: white;
@@ -129,16 +118,18 @@ hr {
 }
 
 .about-me {
-  padding: 10em 5em;
-  color: white;
+  padding: 20vh 6vw 20vh 6vw;
+  color: black;
+  background-color: #f0f0f0;
 }
 
 .section-title {
-  padding-bottom: 50px;
-  color: white;
+  padding: 0em 0em 2em 0em;
+  color: black;
   z-index: 0;
   opacity: 1;
   position: relative;
+  text-align: center;
 }
 
 .about-me-img {
@@ -157,11 +148,12 @@ hr {
 
 .about-me-text {
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .skills {
   color: white;
-  padding: 10em 5em;
+  padding: 10em 2em 8em 2em;
 }
 
 .lang-icons {
@@ -171,6 +163,8 @@ hr {
 }
 
 .lang-text {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 500;
   padding-top: 1em;
   font-size: 1.5em;
 }
@@ -182,7 +176,8 @@ hr {
 }
 
 .list-col h3 {
-  font-weight: bolder;
+  font-weight: 500;
+  font-size: 1.5em;
 }
 
 .list-col ul {
@@ -213,7 +208,12 @@ hr {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity: 0.5;
+  opacity: 0.4;
+  /* background-color: #131c42; */
+}
+
+.experience .container {
+  padding-top: 2em;
 }
 
 /* Work Experience Timeline */
@@ -295,7 +295,7 @@ hr {
   /* border: 1px solid white; */
   border-radius: 5px;
   position: relative;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(6, 13, 41, 0.75);
 }
 
 /* Styles for company name */
@@ -321,7 +321,7 @@ hr {
 }
 
 .project-card {
-  width: 100%;
+  width: 90%;
   background-color: white;
   border-radius: 5px;
   font-family: "Roboto", "sans-serif";
@@ -331,7 +331,7 @@ hr {
 
 .project-card .project-img {
   width: 100%;
-  height: 100%;
+  height: 15em;
   border-radius: 5px 5px 0px 0px;
 }
 .project-card .project-title {
@@ -371,7 +371,7 @@ hr {
 }
 
 .project-list-wrapper i {
-  padding: 0 0.75em;
+  padding: 0 0.2em;
 }
 
 .project-list-wrapper i:hover {
@@ -397,6 +397,7 @@ hr {
   font-size: large;
   text-align: center;
   padding: 1em 0em;
+  margin: 0;
 }
 
 .email-btn {

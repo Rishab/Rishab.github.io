@@ -108,7 +108,7 @@ hr {
 }
 
 .fab:hover {
-  color: black;
+  /* color: black; */
 }
 
 .resume-btn {
@@ -153,7 +153,14 @@ hr {
 
 .skills {
   color: white;
-  padding: 10em 2em 8em 2em;
+  /* padding: 10em 2em 8em 2em; */
+  padding: 20vh 6vw 20vh 6vw;
+}
+
+.skills-section-title {
+  color: white;
+  text-align: center;
+  padding-bottom: 2em;
 }
 
 .lang-icons {
@@ -213,7 +220,14 @@ hr {
 }
 
 .experience .container {
-  padding-top: 2em;
+  padding: 10vh 6vw 10vh 6vw;
+}
+
+.experience-section-title {
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-bottom: 2em;
 }
 
 /* Work Experience Timeline */
@@ -316,8 +330,13 @@ hr {
 }
 
 .projects {
-  padding: 2em 2em;
   background-color: #eeeeee;
+  padding: 10vh 0vw;
+}
+
+.project-section-title {
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 .project-card {
@@ -390,6 +409,13 @@ hr {
   padding: 3px 4px;
 }
 
+.contact {
+  padding: 2em 1em;
+}
+
+.contact-section-title {
+  text-align: center;
+}
 .contact-description {
   color: white;
   font-family: "Roboto", "sans-serif";
@@ -398,6 +424,9 @@ hr {
   text-align: center;
   padding: 1em 0em;
   margin: 0;
+}
+.contact-description ul {
+  margin-bottom: 0;
 }
 
 .email-btn {

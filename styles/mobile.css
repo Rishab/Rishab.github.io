@@ -3,7 +3,22 @@
 }
 
 .experience::before {
-  background-attachment: initial;
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* width: 100%; */
+  /* height: 100%; */
+  z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.skills {
+  background-color: #171c28;
 }
 
 .navbar {
@@ -62,4 +77,21 @@
   .hero .swe-text {
     font-size: 1.5em;
   }
+}
+
+/* Work Experience Timeline */
+.timeline::before {
+  left: 0%;
+}
+
+.timeline .timeline-icon {
+  left: 0.3%;
+}
+
+.timeline .timeline-box .timeline-box-left {
+  display: none;
+}
+
+.timeline .timeline-box .timeline-box-right {
+  width: 100%;
 }

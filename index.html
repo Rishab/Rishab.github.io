@@ -37,17 +37,17 @@
       crossorigin="anonymous"
     ></script>
     <script src="scripts/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       media="screen and (max-device-width: 768px)"
       href="styles/mobile.css"
-    />
+    /> -->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
@@ -57,12 +57,16 @@
     >
       <a class="navbar-brand" href="#">RC</a>
       <button
-        class="navbar-toggler ml-auto custom-toggler"
+        class="navbar-toggler ml-auto custom-toggler collapsed"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
       >
-        <i class="icon fa fa-bars fa-lg"></i>
+        <div class="animated-toggler">
+          <span style="margin-top: 0px;" class="icon-bar top-bar"></span>
+          <span style="margin-top: 4px;" class="icon-bar middle-bar"></span>
+          <span style="margin-top: 4px;" class="icon-bar bottom-bar"></span>
+        </div>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">

@@ -654,7 +654,8 @@ a.left-underline:focus {
   }
 }
 
-@screen and (max-device-width: 990px) {
+/* Mobile Styles */
+@media screen and (max-width: 991px) {
   .navbar {
     padding: 0 0;
   }
@@ -667,28 +668,81 @@ a.left-underline:focus {
 
   .navbar-toggler {
     padding: 0.5rem 1rem;
+    z-index: 1;
+    border: none;
+    background: transparent !important;
+  }
+
+  .icon-bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    display: block;
+    transition: all 0.2s;
+  }
+
+  .navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+  }
+
+  .navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+
+  .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+  }
+
+  .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+  }
+
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    /* background-color: #060d29; */
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 
   .navbar-collapse ul {
-    background: #171c28;
-    opacity: 0.95;
+    background: #060d29;
+    opacity: 0.9;
     width: 100%;
     margin: auto;
     height: 100vh;
-    /* padding-left: 0px; */
   }
 
   .navbar-collapse ul li {
-    padding: 0.75em 0;
+    padding: 1em 0;
+    font-size: 1em;
   }
 
   .navbar-nav {
     justify-content: center;
     align-items: center;
   }
+  .navbar-brand {
+    /* margin-top: 4px; */
+  }
 }
 
-/* Mobile Styles */
 @media (pointer: coarse) {
   .hero::before {
     background-attachment: initial;
@@ -705,7 +759,7 @@ a.left-underline:focus {
   }
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   /* Work Experience Timeline */
   .timeline::before {
     left: 0%;
@@ -737,7 +791,7 @@ a.left-underline:focus {
   }
 }
 
-@media screen and (max-device-width: 625px) {
+@media screen and (max-width: 625px) {
   .hero .name-text {
     font-size: 4em;
   }
@@ -745,7 +799,7 @@ a.left-underline:focus {
     font-size: 3em;
   }
 }
-@media screen and (max-device-width: 499px) {
+@media screen and (max-width: 499px) {
   .hero .name-text {
     font-size: 3em;
   }
@@ -754,7 +808,7 @@ a.left-underline:focus {
   }
 }
 
-@media screen and (max-device-width: 374px) {
+@media screen and (max-width: 374px) {
   .hero .name-text {
     font-size: 2em;
   }

@@ -2,23 +2,19 @@
   background-attachment: initial;
 }
 
-.experience::before {
+.experience:after {
   content: "";
-  display: block;
-  position: fixed;
-  left: 0;
+  position: fixed; /* stretch a fixed position to the whole screen */
   top: 0;
-  /* width: 100%; */
-  /* height: 100%; */
-  z-index: -1;
+  height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+  left: 0;
+  right: 0;
+  z-index: -1; /* needed to keep in the background */
+  background-image: url("../resources/images/experience_bg4.jpg") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-.skills {
-  background-color: #171c28;
 }
 
 .navbar {
@@ -85,7 +81,7 @@
 }
 
 .timeline .timeline-icon {
-  left: 0.3%;
+  left: 0.2%;
 }
 
 .timeline .timeline-box .timeline-box-left {
@@ -94,4 +90,8 @@
 
 .timeline .timeline-box .timeline-box-right {
   width: 100%;
+}
+
+.project-card {
+  width: 95%;
 }

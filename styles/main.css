@@ -363,16 +363,34 @@ a.left-underline:focus {
   font-weight: 300;
 }
 
+.work-tags-list {
+  margin: 0;
+}
+
+.work-tag {
+  color: #f8807f;
+  padding: 0.2em 0.4em;
+  border: 1px solid #f8807f;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+
 .lessons-btn {
   color: #f8807f;
-  border-color: #f8807f;
-  margin-bottom: 0.5rem;
+  margin: 0 auto 1rem auto;
+  text-decoration: none;
+  width: 80%;
+  border: 2px solid #f8807f;
+  border-radius: 8px;
 }
 
 .lessons-btn:hover {
   color: white;
   background-color: #f8807f;
   border-color: #f8807f;
+  text-decoration: none;
 }
 
 .demo-icon {
@@ -391,7 +409,7 @@ a.left-underline:focus {
 }
 
 .project-card {
-  width: 90%;
+  width: 95%;
   background-color: white;
   border-radius: 5px;
   font-family: "Roboto", "sans-serif";
@@ -412,19 +430,7 @@ a.left-underline:focus {
 }
 
 .project-card .project-description {
-  padding: 0.25em 1em 0em 1em;
-}
-.project-card .btn-learn-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5em 0em;
-}
-
-.project-card .btn-learn-wrapper .btn-learn {
-  width: 90%;
-  color: #060d29;
-  border-color: #060d29;
+  padding: 0.25em 0.5em 0em 0.5em;
 }
 
 .btn-learn:hover {
@@ -445,19 +451,63 @@ a.left-underline:focus {
 }
 
 .project-list-wrapper i:hover {
-  color: #4759ab !important;
+  cursor: pointer;
+}
+
+.project-media {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+}
+
+.project-award {
+  padding-top: 1em;
+}
+.question-heading {
+  text-align: left;
+  padding: 0.5em 0em;
+}
+.question-answer {
+  text-align: left;
+  font-size: 1em;
+  font-weight: 300;
 }
 
 .project-tags-wrapper li {
-  padding: 5px 0px;
+  padding: 0.15em 0.4em;
+  float: left;
 }
 
 .lang-tag {
   background-color: #eeeeee;
   border-radius: 5px;
-  color: #131c42;
   font-weight: 300;
+  font-size: 14px;
   padding: 3px 4px;
+}
+
+.modal-body-btn {
+  position: absolute;
+  left: 12px;
+  margin: 0px;
+}
+
+.modal-body-btn button {
+  color: #060d29;
+  border-color: #060d29;
+  margin-right: 0.5em;
+}
+
+.modal-body-btn button:hover {
+  color: white;
+  background-color: #060d29;
+  border-color: #060d29;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #131c42;
 }
 
 .photography .container {
@@ -741,6 +791,9 @@ a.left-underline:focus {
   .navbar-brand {
     /* margin-top: 4px; */
   }
+  .project-media {
+    height: 300px;
+  }
 }
 
 @media (pointer: coarse) {
@@ -780,6 +833,13 @@ a.left-underline:focus {
   .timeline .timeline-box .timeline-date {
     display: block;
     color: white;
+    font-weight: 300 !important;
+    font-size: 100px !important;
+  }
+
+  .timeline-date h5 {
+    font-weight: 500 !important;
+    font-size: 16px !important;
   }
 
   .lessons-btn {
@@ -787,7 +847,7 @@ a.left-underline:focus {
   }
 
   .project-card {
-    width: 95%;
+    width: 80%;
   }
 }
 

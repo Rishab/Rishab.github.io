@@ -58,7 +58,6 @@ body {
 
 nav {
   position: fixed;
-  /* top: 0; */
   transition: 0.4s;
 }
 
@@ -67,14 +66,9 @@ nav {
   box-shadow: 0px 1px 15px black;
 }
 .navbar-light .navbar-brand {
-  /* animation: fadeIn 2s normal forwards;
-  animation-delay: 2s; */
   color: white;
 }
 .navbar-light .navbar-toggler {
-  /* animation-iteration-count: 1;
-  animation: fadeIn 2s normal forwards;
-  animation-delay: 2s; */
   border: none;
 }
 .navbar-light .navbar-toggler-icon {
@@ -111,11 +105,7 @@ hr {
   position: relative;
 }
 
-.fab:hover {
-  /* color: black; */
-}
-
-.resume-btn {
+.resume-btn-nav {
   padding-left: 10px !important;
   color: white;
   border-color: white;
@@ -157,7 +147,6 @@ hr {
 
 .skills {
   color: white;
-  /* padding: 10em 2em 8em 2em; */
   padding: 20vh 6vw 20vh 6vw;
 }
 
@@ -220,9 +209,7 @@ hr {
   background-repeat: no-repeat;
   background-attachment: fixed;
   opacity: 0.5;
-  /* background-color: #131c42; */
   z-index: -1;
-  /* top: 100px; */
 }
 
 .experience .container {
@@ -233,11 +220,10 @@ hr {
   color: white;
   text-align: center;
   position: relative;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 /* Work Experience Timeline */
-
 .timeline {
   position: relative;
   font-family: "Roboto", "sans-serif";
@@ -250,25 +236,7 @@ hr {
   border-left: 2px solid #f8807f;
   position: absolute;
   left: 29.95%;
-  /* top: px; */
 }
-
-/* .timeline::after {
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 50%;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 100px solid red;
-} */
-/* 
-.timeline .timeline-arrow {
-  position: absolute;
-  transform: translateX(-50%) translateY(-40%);
-  left: 30.1%;
-  color: white;
-} */
 
 .timeline .timeline-box {
   padding-left: 0px;
@@ -278,7 +246,6 @@ hr {
   position: relative;
   color: white;
   margin: 0;
-  /* z-index: 1; */
 }
 
 .timeline .timeline-icon {
@@ -286,14 +253,12 @@ hr {
   height: 20px;
   width: 20px;
   background-color: rgba(255, 255, 255, 1);
-  /* opacity: 0; */
   border: 1px solid white;
   border-radius: 50%;
   transform: translateX(-50%) translateY(-50%);
   position: absolute;
   left: 30%;
   top: 48%;
-  /* z-index: -1; */
 }
 
 .timeline .timeline-box .timeline-box-left {
@@ -308,14 +273,11 @@ hr {
   display: table-cell;
   vertical-align: top;
   padding-left: 2em;
-  /* background-color: black; */
   padding-top: 1em;
   padding-bottom: 1em;
 }
 .timeline .timeline-content {
-  /* background-color: black; */
   padding: 1em 1em 0.5em 1em;
-  /* border: 1px solid white; */
   border-radius: 5px;
   position: relative;
   background: rgba(22, 19, 21, 0.8);
@@ -377,25 +339,27 @@ a.left-underline:focus {
   margin-bottom: 1em;
 }
 
-.lessons-btn {
-  color: #f8807f;
-  margin: 0 auto 1rem auto;
-  text-decoration: none;
-  width: 80%;
-  border: 2px solid #f8807f;
-  border-radius: 8px;
+.exp-desc {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1.1em;
 }
 
-.lessons-btn:hover {
+.resume-btn {
+  color: #f8807f;
+  margin: 1em auto 4em auto;
+  text-decoration: none;
+  border: 2px solid #f8807f;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  font-size: 1.25em;
+}
+
+.resume-btn:hover {
   color: white;
   background-color: #f8807f;
   border-color: #f8807f;
   text-decoration: none;
-}
-
-.demo-icon {
-  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
-    brightness(118%) contrast(119%);
 }
 
 .projects {
@@ -425,7 +389,6 @@ a.left-underline:focus {
 .project-card .project-title {
   padding-top: 0.5em;
   text-align: center;
-  /* text-transform: uppercase; */
   letter-spacing: 1px;
 }
 
@@ -490,6 +453,7 @@ a.left-underline:focus {
   font-weight: 300;
   font-size: 14px;
   padding: 3px 4px;
+  margin-bottom: 1em;
 }
 
 .modal-body-btn {
@@ -539,9 +503,7 @@ a.left-underline:focus {
   background-repeat: no-repeat;
   background-attachment: fixed;
   opacity: 0.5;
-  /* background-color: #131c42; */
   z-index: -1;
-  /* top: 100px; */
 }
 
 .shotbyrishy-wrapper {
@@ -905,7 +867,6 @@ a.left-underline:focus {
 
   .navbar-collapse {
     position: fixed;
-    /* background-color: #060d29; */
     top: 0;
     left: 0;
     width: 100%;
@@ -927,9 +888,6 @@ a.left-underline:focus {
   .navbar-nav {
     justify-content: center;
     align-items: center;
-  }
-  .navbar-brand {
-    /* margin-top: 4px; */
   }
   .project-media {
     height: 300px;

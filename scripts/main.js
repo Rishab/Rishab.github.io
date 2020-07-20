@@ -23,37 +23,7 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-// var $animation_elements = $(".animation-element");
-// var $window = $(window);
-// function inViewport() {
-//   console.log("in function");
-//   var window_height = $window.height();
-//   var window_top_position = $window.scrollTop();
-//   var window_bottom_position = window_top_position + window_height;
-//   console.log($animation_elements);
-
-//   $.each($animation_elements, function () {
-//     console.log("in function 2");
-//     // get the current element, calculate the height and get the top and bottom positions
-//     var $element = $(this);
-//     var element_height = $element.outerHeight();
-//     var element_top_position = $element.offset().top;
-//     var element_bottom_position = element_top_position + element_height;
-//     console.log(element_bottom_position);
-
-//     //check to see if the current element is in the viewport
-//     if (
-//       element_bottom_position >= window_top_position &&
-//       element_top_position <= window_bottom_position
-//     ) {
-//       console.log("trigger animation");
-//       $element.addClass("trigger");
-//     }
-//   });
-// }
-
-// $window.on("scroll resize load", inViewport);
-
+// for animating elements on scroll
 $(function () {
   var $animation_elements = $(".animation-element");
   var $window = $(window);

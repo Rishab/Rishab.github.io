@@ -625,7 +625,7 @@ a.left-underline:focus {
 
 @keyframes slideUp {
   from {
-    top: 50px;
+    top: 35px;
     opacity: 0;
   }
   to {
@@ -644,7 +644,7 @@ a.left-underline:focus {
 
 @keyframes slideDown {
   from {
-    top: -50px;
+    top: -35px;
     opacity: 0;
   }
   to {
@@ -762,6 +762,19 @@ a.left-underline:focus {
   opacity: 1;
 }
 
+.fade-in-icon {
+  opacity: 0;
+}
+
+.fade-in-icon.trigger {
+  animation: fadeIn 0.75s ease-in-out both;
+  -webkit-animation: fadeIn 0.75s ease-in-out both;
+  -moz-animation: fadeIn 0.75s ease-in-out both;
+  -o-animation: fadeIn 0.75s ease-in-out both;
+  -ms-animation: fadeIn 0.75s ease-in-out both;
+  opacity: 1;
+}
+
 @-webkit-keyframes slideLeft {
   0% {
     opacity: 0;
@@ -818,6 +831,12 @@ a.left-underline:focus {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-card {
+    width: 85%;
   }
 }
 
@@ -964,7 +983,7 @@ a.left-underline:focus {
   }
 
   .project-card {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -976,6 +995,13 @@ a.left-underline:focus {
     font-size: 3em;
   }
 }
+
+@media screen and (max-width: 575px) {
+  .project-card {
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 499px) {
   .hero .name-text {
     font-size: 3em;
@@ -983,13 +1009,31 @@ a.left-underline:focus {
   .hero .swe-text {
     font-size: 2em;
   }
+  .project-card {
+    width: 80%;
+  }
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 375px) {
   .hero .name-text {
-    font-size: 2em;
+    font-size: 2.75em;
   }
   .hero .swe-text {
-    font-size: 1.5em;
+    font-size: 2em;
+  }
+  .project-card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .hero .name-text {
+    font-size: 2.25em;
+  }
+  .hero .swe-text {
+    font-size: 1.75em;
+  }
+  .project-card {
+    width: 90%;
   }
 }

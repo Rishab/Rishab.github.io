@@ -454,6 +454,10 @@ a.left-underline:focus {
   cursor: pointer;
 }
 
+.modal {
+  font-family: "Roboto", "sans-serif";
+}
+
 .project-media {
   position: relative;
   top: 0;

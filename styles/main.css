@@ -27,7 +27,7 @@ body {
 
 .hero::before {
   content: "";
-  background-image: url("../resources/images/landing_portrait.JPG");
+  background-image: url("../resources/images/landing_portrait-min.JPG");
   background-size: cover;
   position: absolute;
   background-position: center center;
@@ -203,7 +203,7 @@ hr {
   height: 100%;
   content: "";
   position: absolute;
-  background-image: url("../resources/images/experience_bg6.JPG");
+  background-image: url("../resources/images/experience_bg6-min.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -497,7 +497,7 @@ a.left-underline:focus {
   height: 100%;
   content: "";
   position: absolute;
-  background-image: url("../resources/images/photography_bg.jpeg");
+  background-image: url("../resources/images/photography_bg-min.jpeg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -889,6 +889,7 @@ a.left-underline:focus {
     justify-content: center;
     align-items: center;
   }
+
   .project-media {
     height: 300px;
   }

@@ -39,7 +39,6 @@ $(function () {
       var $element = $(this);
       var element_top_position = $element.offset().top;
       var element_trigger_position = element_top_position - 200;
-      console.log(element_trigger_position);
       //check to see if this current container is within viewport
       if (element_trigger_position <= window_middle_position) {
         $element.addClass("trigger");

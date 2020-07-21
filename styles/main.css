@@ -626,10 +626,10 @@ a.left-underline:focus {
 }
 
 @keyframes zoomIn {
-  from {
+  0% {
     width: 0%;
   }
-  to {
+  100% {
     width: 90%;
   }
 }

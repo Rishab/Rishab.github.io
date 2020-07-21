@@ -1,3 +1,9 @@
+html {
+  transform: translatez(0);
+  -webkit-transform: translatez(0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
 body {
   margin: 0;
   background-color: #060d29;
@@ -32,12 +38,13 @@ body {
   position: absolute;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: initial;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
   opacity: 0.4;
+  will-change: transform;
 }
 
 .hero .name-text {
@@ -207,9 +214,10 @@ hr {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: initial;
   opacity: 0.5;
   z-index: -1;
+  will-change: transform;
 }
 
 .experience .container {
@@ -501,9 +509,10 @@ a.left-underline:focus {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: initial;
   opacity: 0.5;
   z-index: -1;
+  will-change: transform;
 }
 
 .shotbyrishy-wrapper {
